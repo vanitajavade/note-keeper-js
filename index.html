@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><b>Notes</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+          <form class="form-inline my-2 right">
+            <input class="form-control mr-sm-2" id="search_box" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button> -->
+          </form>
+        </div>
+      </nav>
+    
+      <div class="container my-5">
+          <h1 class="mb-3"><b>Welcome To Notes</b></h1>
+          <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" id="noteTitle"/>
+            <br>
+            <label>Description</label>
+            <textarea class="form-control" id="noteText" rows="4"></textarea>
+            <button id="noteBtn" class="btn btn-info my-3" type="submit">Add Note</button>
+          </div>
+
+          <hr>
+          <h3 class="my-4">Your Notes</h3>
+          <div class="row" id="notes">
+            <div class="col-12" id="no_notes"></div>
+              <!-- <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-info" id="delete">Delete</a>
+                    </div>
+                  </div>
+              </div> -->
+              
+              
+          </div>
+      </div>
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/note.js"></script>
+
+</body>
+</html>
