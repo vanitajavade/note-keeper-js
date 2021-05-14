@@ -1,4 +1,3 @@
-console.log('My First Project');
 printNotes();
 
 let addBtn = document.getElementById('noteBtn');
