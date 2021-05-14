@@ -58,10 +58,10 @@ function printNotes() {
       </div> `
     }
 
-    if (noteArry.length >= 1) {
+    if (noteArry.length != 0) {
         document.getElementById('notes').innerHTML = html;
     } else {
-        document.getElementById('no_notes').innerHTML = "You do not add anything.";
+         document.getElementById('notes').innerHTML = `<div class="col-12">You do not add anything.</div>`;
     }
 }
 
